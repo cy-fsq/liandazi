@@ -1,0 +1,11 @@
+# wrangler.toml - Cloudflare Pages 配置
+# 部署到 Cloudflare Pages: npx wrangler pages deploy dist
+[vars]
+NODE_VERSION = "20"
+
+[env.production]
+name = "liandazi"
+
+[build]
+command = "npm run build"
+output_dir = "dist"
